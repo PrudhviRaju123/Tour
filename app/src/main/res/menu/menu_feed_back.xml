@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ua.hower.house.FeedBack">
+
+    <item
+        android:id="@+id/message_send"
+        android:title ="send Mail"
+        app:showAsAction="always"
+        android:orderInCategory="300"
+        android:icon="@drawable/ic_send_white_48dp"
+        >
+    </item>
+
+</menu>

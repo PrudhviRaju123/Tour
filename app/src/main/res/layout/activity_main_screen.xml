@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageLogo"
+        android:src="@drawable/hower_house"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageLogo"
+        android:paddingTop="150dp"
+        android:text="Downloading files .."
+        android:id="@+id/textview"/>
+
+    <com.gc.materialdesign.views.ProgressBarDeterminate
+        materialdesign:max="100"
+        android:id="@+id/progressDeterminate"
+        android:layout_below="@+id/textview"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/myPrimaryColor"
+         />
+
+
+</RelativeLayout>
+

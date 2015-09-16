@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:paddingTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Your Email(optional) :"
+        android:id="@+id/EmailTextView"
+        android:layout_gravity="left|top" />
+
+    <EditText
+        android:layout_below="@+id/EmailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:ems="10"
+        android:id="@+id/EmailEditText" />
+
+    <TextView
+        android:layout_below="@+id/EmailEditText"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Subject:"
+        android:id="@+id/textView"
+        android:layout_gravity="left|top" />
+
+    <EditText
+        android:layout_below="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailSubject"
+        android:textSize="15dp"
+        android:ems="10"
+        android:textColor="#000000"
+
+        android:id="@+id/EmailSubjectEditText" />
+
+    <TextView
+        android:layout_below="@+id/EmailSubjectEditText"
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#808080"
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Your Email:"
+        android:id="@+id/EmailBodyTextView"
+        android:layout_gravity="left|top" />
+
+    <EditText
+        android:layout_below="@+id/EmailBodyTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:ems="10"
+        android:id="@+id/EmailBodyEditText" />
+
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_addButtonColorNormal="@color/myPrimaryColor"
+        app:fab_addButtonColorPressed="@color/ButtonClickColor"
+        app:fab_addButtonPlusIconColor="@color/white"
+        app:fab_colorPressed="@color/ButtonClickColor"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentRight="true"></com.getbase.floatingactionbutton.FloatingActionButton>
+
+</RelativeLayout>
+
